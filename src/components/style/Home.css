@@ -1,0 +1,60 @@
+* {
+    font-weight: bold;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero{
+    max-width: 1600px;
+    margin: 2rem auto;
+    text-align: center;
+    gap: 0;
+    padding: 1;
+  }
+  
+  .t {
+    font-size: 5rem;
+    color: #0077cc;
+    opacity: 0;
+    margin: auto;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.8s ease-out forwards;
+  }
+  
+  .delay{
+    margin: 2rem ;
+
+    font-size: 3rem;
+    font-weight: 500;
+    animation-delay: 0.7s;
+  }
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero{      
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+  
+    .delay {
+      font-size: 3rem;
+    }
+  }
+
+  

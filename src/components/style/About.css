@@ -1,0 +1,254 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about{
+    color:#0077cc;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.about p{
+  font-size: 1.5rem;
+}
+.text{
+    max-width: 1500px; 
+    font-size: 5rem;
+    margin: 0.5rem auto;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s ease-out forwards;
+  }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero-container, .section-block, .who-container, .core-values, .value-box, .vision{
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.hero-container{
+    border-radius: 20px;
+    background-color: #f5f9fc;
+    max-width: 1500px;
+    margin: 0.5rem auto;
+    padding: 2rem;
+  
+    text-align: left;
+  }
+  
+  .section-block{
+    border-radius: 8px;
+    background-color: white;
+    margin: 1.5rem 0;
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  .section-block h2{
+    color:#0077cc;
+    font-size: 2.5rem;
+  }
+  
+  .section-block p{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInLeft 1.2s ease-out forwards;
+  
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  #verse-ref{
+    display: block;
+    text-align: right;
+    font-size: 1.8rem;
+  }
+  
+  .core-values {
+    background-color: #f5f9fc;
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .col1{
+    flex: 1;
+    margin: auto;
+  
+  }
+  
+  .value-box.hidden{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .value-box.show{
+    animation: fadeInLeft 1.2s ease-out forwards;
+  }
+  
+  .value-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+  
+    max-width: 450px;
+    height: 100px;
+  
+    background-color: #fff;
+    color: #0077cc;
+    border-radius: 12px;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+  }
+  
+  .title{font-size: 2.5rem;}
+  .prayer {animation-delay: 0s;}
+  .compassion{animation-delay:0.2s;}
+  .mentorship{animation-delay:0.4s;}
+  .healing{animation-delay:0.6s;}
+  .mission{animation-delay:0.8s;}
+  
+  
+  .value-box:hover {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    background-color: #4a7cbf;
+    color: #fff;
+  }
+  
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .image-wrapper.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .image-wrapper.show {
+    animation: fadeInLeft 1.2s ease-out forwards;
+  }
+  
+  .picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .gallery1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem; 
+  }
+  
+  .image-wrapper {
+    transition: opacity 3s ease, transform 3s ease;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .photo {
+    border-radius: 8px;
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  
+    transition: opacity 2s ease, transform 2s ease;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
+  .photo.fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+
+.vision {
+  border-radius: 20px;
+  background-color: #fff;
+  max-width: 1500px;
+  margin: 2rem auto;
+  padding: 1rem; 
+  overflow-x: auto;
+}
+
+.vision-box {
+  display: flex;
+  gap: 1rem;
+  height: 350px;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; 
+  padding-bottom: 1rem;
+}
+
+.word-box {
+  flex: 0 0 auto; 
+  min-width: 200px;
+  max-width: 280px;
+  scroll-snap-align: start;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #6092c4;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+.vision-box p {
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.word-box.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.word-box.show {
+  animation: fadeInLeft 1.2s ease-out forwards;
+}
+
+.help {
+  animation-delay: 0s;
+}
+.empower {
+  animation-delay: 0.5s;
+}
+.awaken {
+  animation-delay: 1s;
+}
+.link {
+  animation-delay: 1.5s;
+}

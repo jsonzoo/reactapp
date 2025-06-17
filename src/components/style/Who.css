@@ -1,0 +1,32 @@
+.who-container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 3rem;
+    max-width: 1500px;
+    margin: 3rem auto;
+    color: #333;
+  }
+  
+  .who.hidden{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .who.show{
+    animation: fadeInLeft 1.2s ease-out forwards;
+  }
+  
+  .who h2{
+    
+    color: #0077cc;
+    text-align: left;
+    font-size: 3rem;
+  }
+  .who p{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    animation-delay: 0.5s;
+  }
+  
