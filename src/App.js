@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Events from './components/events';
+import Missions from './components/missions';
 import Connect from './components/connect';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/missions" element={<Missions />} />
         <Route path ="/events" element={<Events />} />
         <Route path ="/connect" element={<Connect />} />
       </Routes>
